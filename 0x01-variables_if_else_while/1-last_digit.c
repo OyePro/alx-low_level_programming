@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Determines whether the last digit is greater than 5, less than 6 or equal to zero
+ * main - Entry point
+ *
  * Return: Always 0 (success)
  */
 int main(void)
