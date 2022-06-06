@@ -1,48 +1,44 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-/**
- * main - Entry point
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/*
+ * main - Entry point into printing combinations of two digits number
  *
- * Return: Always 0 (Success)
+ * Return - Always 0 (success)
  */
 int main(void)
 {
-int i, e, g, h, op1, op2;
-i = e = g = h = 48;
-while (h < 58)
+int n1, n2, n3, n4;
+n1 = 48;
+while (n1 < 58)
 {
-g = 48;
-while (g < 58)
+n2 = 48;
+while (n2 < 58)
 {
-e = 48;
-while (e < 58)
+n3 = n1;
+while (n3 < 58)
 {
-i = 48;
-while (i < 58)
+n4 = n2 + 1;
+while (n4 < 58)
 {
-op1 = (h * 10) + g;
-op2 = (e * 10) + i;
-if (op1 < op2)
-{
-putchar(h);
-putchar(g);
+putchar(n1);
+putchar(n2);
 putchar(' ');
-putchar(e);
-putchar(i);
-if (h == 57 && g == 56 && e == 57 && i == 57)
-break;
+putchar(n3);
+putchar(n4);
+if (!((n1 == 57 && n2 == 56) && (n3 == 57 && n4 == 57)))
+{
 putchar(',');
 putchar(' ');
 }
-i++;
+n4++;
 }
-e++;
+n3++;
 }
-g++;
+n2++;
 }
-h++;
+n1++;
 }
-putchar('\n');
+putchar(10);
 return (0);
 }
