@@ -14,9 +14,7 @@ if (l > 0)
 {
 int m;
 for (m = 1 ; m < l ; m++)
-{
 s[m] = b;
-}
 }
 return (s);
 }
