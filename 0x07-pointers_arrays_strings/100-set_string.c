@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * set_string - function to set value of a pointer to another pointer
- * @s - double pointer
- * @to - character
+ * @s: double pointer
+ * @to: character
  *
  * Return: void
  */
