@@ -16,7 +16,9 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 for (m = 0; s1[m] != '\0'; m++)
+;
 for (n = 0; s2[n] != '\0'; n++)
+;
 strcop = malloc(sizeof(char) * (m + n + 1));
 if (strcop == NULL)
 {
